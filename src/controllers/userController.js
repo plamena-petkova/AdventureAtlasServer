@@ -65,13 +65,12 @@ module.exports.login = async (req, res, next) => {
   }
 };
 
-/*
+
 module.exports.getAllUsers = async (req, res, next) => {
   try {
     const users = await User.find({}).select([
       "email",
       "username",
-      "avatarImg",
       "_id",
       "names",
     ]);
@@ -87,6 +86,7 @@ module.exports.getAllUsers = async (req, res, next) => {
   }
 };
 
+/*
 module.exports.updateAvatar = async (req, res, next) => {
   try {
     const { userId, avatar } = req.body;
